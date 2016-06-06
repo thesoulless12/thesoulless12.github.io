@@ -1,0 +1,29 @@
+
+<div class="requestInner">
+    <a href="#close" title="close" class="btnClose">X</a>
+    <form class="frmRequest" id="frmRequest" action="requestProcess.php" method="post">
+        <fieldset class="reqFields">
+            <legend style="text-align: center">Special Requests</legend>
+            <p>Can't find what your looking for?  Let us find it for you, we'll leave no stone unturned!</p>
+            Email Address<input type="email" name="custEmail" value="Customer #" onfocus="validateValue(this)"><br>
+            First Name<input type="text" name="firstName" value="First Name" onfocus="validateValue(this)"><br>
+            Last Name<input type="text" name="lastName" value="Last Name" onfocus="validateValue(this)"><br>
+            Phone #<input type="tel" name="phoneNum" value="phone#" onfocus="validateValue(this)"><br>
+            Requested Title<input type="text" name="reqTitle" value="What are you looking for?" onfocus="validateValue(this)"><br>
+            Type<select>
+                <option value="Movie">Movie</option>
+                <option value="tvShow">TV Show</option>
+                <option value="sitcom">TV Sitcom</option>
+                <option value="drama">TV Drama</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <input class="reqSubmit" type="submit" name="reqSubmit" value="submit"><br>
+        </fieldset>
+    </form>
+</div>
+<script>
+    function validateValue(elem){
+        elem.select();
+    }
+</script>

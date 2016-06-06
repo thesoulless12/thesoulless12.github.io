@@ -1,0 +1,80 @@
+body {
+    background-color: aliceblue;
+}
+.hdrMain {
+    background-color: #b3d4fc;
+}
+.hdrTag {
+    display: inline-block;
+}
+
+.hdrTag img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.navRibbon {
+    position: relative;
+    width: 100%;
+    border-top: #222222 solid;
+    border-bottom: #222222 solid;
+}
+.navRibbon div {
+    margin: auto;
+    width: 70%;
+}
+.navRibbon a {
+    width: 14%;
+    padding: 10px;
+    background-color: aliceblue;
+    display: inline-block;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+.navRibbon a:hover {
+    background-color: #555555;
+}
+.secMain {
+    position: relative;
+    width: 90%;
+    min-height: 100px;
+    margin: auto;
+}
+.secMain h3 {
+    text-align: center;
+}
+.secDiv {
+    border: solid 2px black;
+}
+
+.secNew {
+    position: relative;
+    padding-top: 5px;
+    margin: auto;
+}
+.secNew h3 {
+    position: relative;
+    left: 10%
+}
+.newDiv {
+    margin: auto;
+    width: 70%;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+.navArrivals figure {
+    display: inline-block;
+    width: 14%;
+}
+
+.navArrivals img {
+    height: 100px;
+    width: 60px;
+}
+.navArrivals figcaption {
+    font-size: small;
+}
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/default.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#hdrDiv").load("header.html");
+                $("#navDiv").load("nav.html");
+            });
+        </script>
+    </head>
+    <body id="container">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="hdrDiv"></div>
+        <!--
+        <header class="hdrMain" id="hdrMain">
+            <h3 class="hdrTag" id="hdrTag">We have the movies</br> and shows that others don't
+            <a href="index.html"><img src="img\dvd.jpg" alt="dvd pic" height="100px" width="100px"></a> </h3>
+        </header>
+        -->
+        <div id="navDiv"></div>
+        <div id="openRequest" class="requestDialog">
+            <!--div class="requestInner">
+                <a href="#close" title="close" class="btnClose">X</a>
+                <div id="requestInnerForm"></div>
+            </div-->
+        </div>
+        <!-- within the body of the text:
+          Movies -> Goes to titles page pre sorted for movies
+          TV Sitcoms -> Goes to titles page pre sorted for SITCOMS
+          Titles -> Goes to titles page
+          Locations -> locations/directions
+          Drop us a line -> request pop-up
+        -->
+        <section class="secMain">
+            <h3 class="secHdr">Welcome To The Delectable Video Delicatessen!</h3>
+            <div class="secDiv">
+                <p>We are Delectable Video Delicatessen, or DVD for short.  We are a Video Rental company that specializes
+                 in carrying those hard to find <a href="#">Movies</a> and <a href="#">TV Sitcoms</a> that those larger
+                 corporate types won't carry.  Our <a href="#">Titles</a> are for rent and sale.  And if don't happen to
+                    see something that you have been craving then <a href="#openRequest" onclick="getReqForm()">Drop us a line</a> and we'll do our best to
+                 tackle your hunger.  As always our goal is your ultimate satisfaction, so stick around and shop, I know
+                 the ambiance isn't quite what it is in our brick and mortar <a href="#">locations</a> but we think you'll
+                 find it just as satisfying!  Thanks again for allowing us to serve you.</p>
+            </div>
+        </section>
+
+        <section class="secNew">
+            <h3>OUR NEWEST ARRIVALS!</h3>
+            <div class="newDiv">
+                <nav class="navArrivals">
+                    <figure>
+                        <img src="img/dodge.png" alt="Dodge City">
+                        <figcaption>Dodge City</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/mash.png" alt="MASH Series">
+                        <figcaption>Mash The Series</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/ringu.png" alt="ringu dvd">
+                        <figcaption>RINGU</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/fantasia.png" alt="Disney's Fantasia">
+                        <figcaption>Disney's Fantasia</figcaption>
+                    </figure>
+                </nav>
+            </div>
+        </section>
+        <script>
+            function getReqForm(){
+                $("#openRequest").load("SpecialRequest.html");
+                //$("#requestInnerForm").load("SpecialRequest.html");
+            }
+        </script>
+        <!-- if firefox allowed includes this would work
+        <script>
+            function loadRequest() {
+                var link = document.querySelector('link[rel="import"]');
+                var temp = document.querySelector("#requestTemp");
+                var clone = document.importNode(temp.content,true);
+                document.querySelector("#container").appendChild(clone);
+            }
+        </script>
+        -->
+        <!--script src="https://code.jquery.com/jquery-1.12.0.min.js"></script-->
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
